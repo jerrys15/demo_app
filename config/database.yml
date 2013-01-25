@@ -14,9 +14,9 @@ development:
   reconnect: false
   database: demo_app_development
   pool: 5
-  username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+  username: rails
+  password: season10
+  socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -25,18 +25,18 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: demo_app_test
+  database: demo_app_development
   pool: 5
-  username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+  username: rails
+  password: season10
+  socket: //var/lib/mysql/mysql.sock
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: demo_app_production
+  database: demo_app_development
   pool: 5
-  username: root
-  password:
+  username: rails
+  password: season10
   socket: /var/lib/mysql/mysql.sock
